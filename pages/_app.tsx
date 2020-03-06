@@ -1,9 +1,14 @@
 import App from 'next/app';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../Theme';
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+    return (
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    );
   }
 }
 
