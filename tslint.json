@@ -1,0 +1,18 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "jsx-wrap-multiline": false,
+    "jsx-boolean-value": false,
+    "jsx-key": true,
+    "jsx-self-close": false,
+    "no-empty-interface": false,
+    "no-default-export": true,
+    "no-implicit-dependencies": [true],
+    "no-submodule-imports": false,
+    "no-relative-imports": true,
+    "no-import-side-effect": [true, { "ignore-module": "(\\.css)$" }]
+  },
+  "linterOptions": {
+    "exclude": ["*.json", "**/*.json", "node_modules/**/*.ts"]
+  }
+}

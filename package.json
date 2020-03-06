@@ -1,0 +1,31 @@
+{
+  "name": "wk-frontend-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}' --quiet --fix"
+  },
+  "dependencies": {
+    "antd": "^3.26.12",
+    "next": "9.2.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/antd": "^1.0.0",
+    "@types/node": "^13.7.0",
+    "@types/react": "^16.9.21",
+    "@types/styled-components": "^5.0.1",
+    "prettier": "^1.18.2",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.8.3",
+    "typescript-styled-plugin": "^0.15.0"
+  }
+}
